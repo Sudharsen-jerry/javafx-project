@@ -1,0 +1,35 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.GameBoardController">
+    <center>
+        <VBox>
+            <HBox>
+                <Button fx:id="btn1" onAction="#handleMove"/>
+                <Button fx:id="btn2" onAction="#handleMove"/>
+                <Button fx:id="btn3" onAction="#handleMove"/>
+            </HBox>
+
+            <HBox>
+                <Button fx:id="btn4" onAction="#handleMove"/>
+                <Button fx:id="btn5" onAction="#handleMove"/>
+                <Button fx:id="btn6" onAction="#handleMove"/>
+            </HBox>
+
+            <HBox>
+                <Button fx:id="btn7" onAction="#handleMove"/>
+                <Button fx:id="btn8" onAction="#handleMove"/>
+                <Button fx:id="btn9" onAction="#handleMove"/>
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox>
+            <Label fx:id="player1WinsLabel" text="Player 1 Wins: 0" />
+            <Label fx:id="player2WinsLabel" text="Player 2 Wins: 0" />
+            <Label fx:id="roundsLabel" text="Round: 1/3" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
